@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<TextView
+        android:id="@+id/serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+-->
+    <TextView
+        android:id="@+id/email_ans"
+        android:padding="30dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="30dp"
+        android:paddingLeft="18dp"
+        android:textSize="13dp"
+        android:layout_toRightOf="@+id/email_ans"
+        android:layout_toEndOf="@+id/email_ans" />
+</LinearLayout>

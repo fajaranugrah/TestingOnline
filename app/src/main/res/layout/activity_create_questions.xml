@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fajar.testingonline.CreateQuestionsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/text_no_soal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <ImageView
+            android:id="@+id/imag"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_no_soal"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/buttoncamera"
+            android:layout_below="@+id/imag"
+            android:layout_alignParentLeft="true"
+            android:text="@string/take_picture"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/buttonchoice"
+            android:layout_below="@+id/imag"
+            android:layout_alignParentRight="true"
+            android:text="@string/choose_file"/>
+
+        <EditText
+            android:id="@+id/input_soal"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/buttonchoice"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/input_soal"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_below="@id/input_soal"
+            android:id="@+id/tablelayout">
+
+            <TableRow>
+
+                <LinearLayout>
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/jawaban1"
+                        android:layout_width="145dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout>
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:text="2"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/jawaban2"
+                        android:layout_width="145dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout>
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:text="3"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/jawaban3"
+                        android:layout_width="145dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout>
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:text="4"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/jawaban4"
+                        android:layout_width="145dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tablelayout"
+            android:textStyle="bold"
+            android:text="@string/text"/>
+    <RadioGroup
+        android:id="@+id/table"
+        android:layout_below="@+id/text"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/jawaban_benar_1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/jawaban_benar_2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/jawaban_benar_3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/jawaban_benar_4"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="4"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </RadioGroup>
+
+        <!--<Button
+            android:id="@+id/button_prev"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/prev"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/button_finish"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/end"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />-->
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/next"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</LinearLayout>

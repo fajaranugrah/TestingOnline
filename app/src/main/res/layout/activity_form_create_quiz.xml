@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_form_create_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fajar.testingonline.FormCreateQuizActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/judul"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/judul"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <!--<TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+        <CheckBox
+            android:layout_width="29dp"
+            android:layout_height="20dp"
+            android:id="@+id/pilih_level"/>-->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/caption"/>
+
+        <!--</TableRow>
+
+        <EditText
+            android:id="@+id/level"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/level"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />-->
+
+        <EditText
+            android:id="@+id/banyak_soal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/banyak_soal"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:hint="@string/select"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/kategori"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.1"
+            android:hint="@string/banyak_soal"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/jam"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_margin="7dp"
+                android:background="@color/white"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_margin="7dp"
+                android:hint="@string/jam"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/menit"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_margin="7dp"
+                android:background="@color/white"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_margin="7dp"
+                android:hint="@string/menit"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/detik"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_margin="7dp"
+                android:background="@color/white"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="7dp"
+                android:hint="@string/detik"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--<EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />-->
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NeedScore"
+            android:text="@string/needscore"/>
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/buat_soal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_login_bg"
+            android:text="@string/buat_soal"
+            android:textColor="@color/black" />
+
+
+        <!-- Link to Login Screen -->
+
+        <!--<Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/btn_link_to_login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15dp" />-->
+    </LinearLayout>
+
+</LinearLayout>

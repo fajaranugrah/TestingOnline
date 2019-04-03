@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Online Test</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Username</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="profile">Welcome to Profile</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="lihat_email">Your Email</string>
+    <string name="lihat_nilai">See the Value</string>
+    <string name="next">Next</string>
+    <string name="pref">Previously</string>
+    <string name="End">End</string>
+    <string name="msg">Please Enable External Storage</string>
+    <string name="judul">Title Question</string>
+    <string name="caption">If you have questions and want to make again and give title you and the difficulty of the this question Example : Science Level 2</string>
+    <string name="banyak_soal">Many Questions</string>
+    <string name="buat_soal">Create Questions</string>
+    <string name="select">Select Category Questions :</string>
+    <string name="jam">HR</string>
+    <string name="menit">MNT</string>
+    <string name="detik">SCND</string>
+    <string name="filter_judul">Title, Email, Or Name</string>
+    <string name="choose_file">Choose File</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="input_soal">Example: What is the picture ?</string>
+    <string name="level">Grade or Level</string>
+    <string name="text">The Correct Answer</string>
+    <string name="textRujukan">Please Enter The Reference Source</string>
+    <string name="view">View Source</string>
+    <string name="needscore">Using Score</string>
+</resources>
